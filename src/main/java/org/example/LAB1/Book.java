@@ -1,9 +1,9 @@
 package org.example.LAB1.library;
 
 public class Book {
-    private int id;
-    private String title;
-    private String author;
+    private final int id;
+    private final String title;
+    private final String author;
     private boolean isBorrowed;
 
     public Book(int id, String title, String author) {
@@ -13,10 +13,14 @@ public class Book {
         this.isBorrowed = false;
     }
 
-    public int getId() { return id; }
-    public String getTitle() { return title; }
-    public String getAuthor() { return author; }
-    public boolean isBorrowed() { return isBorrowed; }
+    public int getId()
+    { return id; }
+    public String getTitle()
+    { return title; }
+    public String getAuthor()
+    { return author; }
+    public boolean isBorrowed()
+    { return isBorrowed; }
 
     public void setBorrowed(boolean borrowed) {
         this.isBorrowed = borrowed;
